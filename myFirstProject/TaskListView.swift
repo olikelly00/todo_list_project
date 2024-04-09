@@ -3,7 +3,7 @@ import SwiftUI
 struct TaskListView: View {
     @State var task: String = ""
     @State var tasks: [String] = [] 
-    @State var taskstatus: [Bool] = []
+    @State var taskstatus: [Int: Bool] = [:]
     @State var taskindex: Int = 0
     
     
@@ -15,12 +15,12 @@ struct TaskListView: View {
                     Section(header: Text("Toggle off your todos here:")) {
                         HStack {
                             TextField("Enter your task here", text: $task, axis: .vertical)
-                            Toggle(isOn: $taskstatus[taskindex]){
-                            }
                             Button (action: {
                                 guard !task.isEmpty else {return}
                                 tasks.append(task)
+                                taskstatus[tasks.count - 1] = false
                                 task = ""
+                                
                                 
                             }) {
                                 Text("Add task")
@@ -30,7 +30,15 @@ struct TaskListView: View {
                             ForEach(tasks.indices, id: \.self) {index in
                                 NavigationLink(destination: TaskDisplayView(task: task, taskindex: index)) {
                                     Text(tasks[index])
-                                    Toggle(isOn: $taskstatus[index]) {
+                                    if let status = taskstatus[index] {
+                                        Toggle(isOn: Binding(
+                                            get: { status },
+                                            set: { taskstatus[index] = $0 }
+                                         )) {}
+                                    } else {
+                                        Toggle(isOn: .constant(false)) {}.disabled(true)
+                                                                                
+                                    }
                                     }
                                 }
                             }
@@ -48,4 +56,4 @@ struct TaskListView: View {
             
         }
     }
-}
+
