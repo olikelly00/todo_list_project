@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E3145242BC5C51D0043F7EC /* NameDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3145232BC5C51D0043F7EC /* NameDisplayView.swift */; };
+		1E3145262BC5CE980043F7EC /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3145252BC5CE980043F7EC /* TaskListView.swift */; };
 		1EC7FE362BC552B6009ACFD8 /* myFirstProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC7FE352BC552B6009ACFD8 /* myFirstProjectApp.swift */; };
 		1EC7FE382BC552B6009ACFD8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC7FE372BC552B6009ACFD8 /* ContentView.swift */; };
 		1EC7FE3A2BC552B7009ACFD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EC7FE392BC552B7009ACFD8 /* Assets.xcassets */; };
@@ -14,6 +16,7 @@
 		1EC7FE472BC552B7009ACFD8 /* myFirstProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC7FE462BC552B7009ACFD8 /* myFirstProjectTests.swift */; };
 		1EC7FE512BC552B7009ACFD8 /* myFirstProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC7FE502BC552B7009ACFD8 /* myFirstProjectUITests.swift */; };
 		1EC7FE532BC552B7009ACFD8 /* myFirstProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC7FE522BC552B7009ACFD8 /* myFirstProjectUITestsLaunchTests.swift */; };
+		1EC7FE602BC5535D009ACFD8 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC7FE5F2BC5535D009ACFD8 /* Pet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E3145232BC5C51D0043F7EC /* NameDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameDisplayView.swift; sourceTree = "<group>"; };
+		1E3145252BC5CE980043F7EC /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
 		1EC7FE322BC552B6009ACFD8 /* myFirstProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myFirstProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EC7FE352BC552B6009ACFD8 /* myFirstProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myFirstProjectApp.swift; sourceTree = "<group>"; };
 		1EC7FE372BC552B6009ACFD8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +49,7 @@
 		1EC7FE4C2BC552B7009ACFD8 /* myFirstProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myFirstProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EC7FE502BC552B7009ACFD8 /* myFirstProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myFirstProjectUITests.swift; sourceTree = "<group>"; };
 		1EC7FE522BC552B7009ACFD8 /* myFirstProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myFirstProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1EC7FE5F2BC5535D009ACFD8 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,9 @@
 				1EC7FE372BC552B6009ACFD8 /* ContentView.swift */,
 				1EC7FE392BC552B7009ACFD8 /* Assets.xcassets */,
 				1EC7FE3B2BC552B7009ACFD8 /* Preview Content */,
+				1EC7FE5F2BC5535D009ACFD8 /* Pet.swift */,
+				1E3145232BC5C51D0043F7EC /* NameDisplayView.swift */,
+				1E3145252BC5CE980043F7EC /* TaskListView.swift */,
 			);
 			path = myFirstProject;
 			sourceTree = "<group>";
@@ -257,7 +266,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EC7FE602BC5535D009ACFD8 /* Pet.swift in Sources */,
 				1EC7FE382BC552B6009ACFD8 /* ContentView.swift in Sources */,
+				1E3145262BC5CE980043F7EC /* TaskListView.swift in Sources */,
+				1E3145242BC5C51D0043F7EC /* NameDisplayView.swift in Sources */,
 				1EC7FE362BC552B6009ACFD8 /* myFirstProjectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
